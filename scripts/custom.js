@@ -10,12 +10,17 @@ $(document).ready( function() {
     });
   }();
 
+
+  // Displays items in sidebar
   function displayData(data, tabletop) {
-    $.each(data, function (key, value) {
-      $('#descriptions').append('<li class="item" id="' + value.lat + '"><h4>' + value.name + '</h4><p>' + value.neighborhood + ' in ' + value.location + '</p></li>');
-    });
+    var sidebarSource = $('#sidebar-template').html();
+    var sidebarTemplate = Handlebars.compile(sidebarSource);
+    var sidebarList = sidebarTemplate(data);
+    $('#descriptions').html(sidebarList);
+    // $.each(data, function (key, value) {
+    //   $('#descriptions').append('<li class="item" id="' + value.lat + '"><h4>' + value.name + '</h4><p>' + value.neighborhood + ' in ' + value.location + '</p></li>');
+    // });
   }
-  // Template for displaying items
 
   // Template for pop-up on map
   var popupSource   = $("#popup-template").html();

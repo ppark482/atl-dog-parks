@@ -21,6 +21,16 @@
       </div>
     </section>
 
+    <!-- Template for Sidebar Items -->
+    <script id="sidebar-template" type="text/x-handlebars-template">
+      {{#each this}}
+        <li class="item" id="{{lat}}">
+          <h4>{{name}}</h4>
+          <p>{{neighborhood}} in {{location}}</p>
+        </li>
+      {{/each}}
+    </script>
+
     <!-- Template for Pop-up -->
     <script id="popup-template" type="text/x-handlebars-template">
       <img src="{{image}}" width="100%">
