@@ -3,11 +3,22 @@
 body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
+	color: HSLA(213, 20%, 36%, 1);
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Muli', sans-serif;
 	padding: 0;
+	color: HSLA(195, 100%, 29%, 1);
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /* Content Styling */
