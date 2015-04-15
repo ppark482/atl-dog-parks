@@ -7,6 +7,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Muli', sans-serif;
+	padding: 0;
 }
 
 /* Content Styling */
@@ -33,7 +34,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Popup on Map Styling */
 
 .mapsheet-popup {
+	border-radius: 2px;
+}
 
+.mapsheet-popup > img {
+	width: 100%;
+	border-radius: 2px;
+}
+
+.links {
+	padding: 5%;
 }
 
 /* Sidebar Styling */
@@ -65,21 +75,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .item {
 	border-bottom: 1px solid HSLA(0, 0%, 90%, 1);
+	padding: 1% 0 1% 5%;
 	transition: background-color .5s ease;
 }
 
 .item:hover {
 	background-color: HSLA(151, 83%, 34%, .5);
+	border-radius: 2px;
 	cursor: pointer;
 }
 
-#bottom_fade {
-	width: 600px;
-	height: 200px;
-	z-index: 99;
-	position: fixed;
-	bottom: 0px;
-	background: url("bottom-fade.png") bottom center no-repeat;
+#last {
+	margin-bottom: 100px;
 }
 
 /* Side by side after 880px width browser */

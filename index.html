@@ -30,15 +30,18 @@
           <p>{{neighborhood}} in {{location}}</p>
         </li>
       {{/each}}
+      <li id="last"></li>
     </script>
 
     <!-- Template for Pop-up -->
     <script id="popup-template" type="text/x-handlebars-template">
-      <img src="{{image}}" width="100%">
       <h3>{{name}}</h3>
       <p>{{neighborhood}} in {{location}}</p>
-      <a href="{{video}}">Youtube</a>
-      <a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank">Get Directions</a>
+      <img src="{{image}}">
+      <div class="links">
+        <a href="{{video}}">Youtube</a>
+        <a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank">Get Directions</a>
+      </div>
     </script>
 
     <!-- <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe> -->
