@@ -1,7 +1,7 @@
 <html>
   <head>
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400|Oswald:400,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
   </head> 
   <body>
     <!-- Google Maps API, Handlebars for Templating, jQuery -->
@@ -9,15 +9,16 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- Tabletop.js for accessing Google Spreadsheets and Mapsheet.js for mapping, of course -->
-    <script type="text/javascript" src="third-party/tabletop.js"></script>
-    <script type="text/javascript" src="third-party/mapsheet.js"></script>
-    <script type="text/javascript" src="third-party/markerwithlabel.js"></script>
+    <script type="text/javascript" src="assets/third-party/tabletop.js"></script>
+    <script type="text/javascript" src="assets/third-party/mapsheet.js"></script>
     <section id="container">
       <!-- Google Map-->
       <div id="map"></div>
       <!-- Sidebar -->
       <div id="sidebar">
-        <ul id="descriptions"></ul>
+        <ul id="descriptions">
+        </ul>
+        <div id="fade"></div>
       </div>
     </section>
 
@@ -42,6 +43,6 @@
 
     <!-- <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe> -->
 
-    <script type="text/javascript" src="scripts/custom.js"></script>
+    <script type="text/javascript" src="assets/scripts/custom.js"></script>
   </body>
 </html>

@@ -39,7 +39,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Sidebar Styling */
 
 #sidebar {
-	z-index: 1;
+	position: relative;
+}
+
+#fade {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background-image: -webkit-linear-gradient(HSLA(0, 0%, 100%, 0), HSLA(0, 0%, 100%, 1));
 }
 
 #descriptions {
@@ -65,12 +74,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #bottom_fade {
-	width: 100%;
-	height: 100px;
+	width: 600px;
+	height: 200px;
 	z-index: 99;
 	position: fixed;
 	bottom: 0px;
-	background: url('assets/bottom-fade.png') bottom center no-repeat;
+	background: url("bottom-fade.png") bottom center no-repeat;
 }
 
 /* Side by side after 880px width browser */

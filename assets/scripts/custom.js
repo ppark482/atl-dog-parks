@@ -16,7 +16,7 @@ $(document).ready( function() {
     var sidebarSource = $('#sidebar-template').html();
     var sidebarTemplate = Handlebars.compile(sidebarSource);
     var sidebarList = sidebarTemplate(data);
-    $('#descriptions').html(sidebarList);
+    $('#descriptions').append(sidebarList);
     // $.each(data, function (key, value) {
     //   $('#descriptions').append('<li class="item" id="' + value.lat + '"><h4>' + value.name + '</h4><p>' + value.neighborhood + ' in ' + value.location + '</p></li>');
     // });
