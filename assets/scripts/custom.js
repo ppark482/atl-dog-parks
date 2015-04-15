@@ -29,6 +29,7 @@ $(document).ready( function() {
     key: published_spreadsheet_url,
     element: "map",
     popupTemplate: popupTemplate,
+    titleColumn: 'index',
     callback: function (mapsheet, tabletop) {
       // var listItems = [];
       // for(var i = 0; i < mapsheet.points.length; i++) {
@@ -47,6 +48,7 @@ $(document).ready( function() {
       key: published_spreadsheet_url,
       element: 'map',
       popupTemplate: popupTemplate,
+      titleColumn: 'index',
       mapOptions: {
         zoom: 15,
         center: [selected.latitude, selected.longitude]
