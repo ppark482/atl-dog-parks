@@ -15,7 +15,7 @@ $(document).ready( function() {
       $('#descriptions').append('<li class="item" id="' + value.lat + '"><h4>' + value.name + '</h4><p>' + value.neighborhood + ' in ' + value.location + '</p></li>');
     });
   }
-  // Template for displaying sou
+  // Template for displaying items
 
   // Template for pop-up on map
   var popupSource   = $("#popup-template").html();
