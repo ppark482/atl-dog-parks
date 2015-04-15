@@ -17,9 +17,6 @@ $(document).ready( function() {
     var sidebarTemplate = Handlebars.compile(sidebarSource);
     var sidebarList = sidebarTemplate(data);
     $('#descriptions').append(sidebarList);
-    // $.each(data, function (key, value) {
-    //   $('#descriptions').append('<li class="item" id="' + value.lat + '"><h4>' + value.name + '</h4><p>' + value.neighborhood + ' in ' + value.location + '</p></li>');
-    // });
   }
 
   // Template for pop-up on map
@@ -33,14 +30,29 @@ $(document).ready( function() {
     element: "map",
     popupTemplate: popupTemplate,
     callback: function (mapsheet, tabletop) {
-      var listItems = [];
-      for(var i = 0; i < mapsheet.points.length; i++) {
-        mapsheet.points[i].marker.icon.labelOrigin = mapsheet.points[i].model.name;
-        listItems.push(mapsheet.points[i].model);
-      }
-      console.log(listItems);
-      console.log(mapsheet);
+      // var listItems = [];
+      // for(var i = 0; i < mapsheet.points.length; i++) {
+      //   mapsheet.points[i].marker.icon.labelOrigin = mapsheet.points[i].model.name;
+      //   listItems.push(mapsheet.points[i].model);
+      // }
+      // console.log(listItems);
+      // console.log(mapsheet);
     }
+  });
+
+  $('#descriptions').on('click', 'li', function () {
+    var selected = $(this).data();
+    map = Mapsheet({
+      provider: Mapsheet.Providers.Google,
+      key: published_spreadsheet_url,
+      element: 'map',
+      popupTemplate: popupTemplate,
+      mapOptions: {
+        zoom: 15,
+        center: [selected.latitude, selected.longitude]
+      }
+    });
+    console.log(map);
   });
 
 });

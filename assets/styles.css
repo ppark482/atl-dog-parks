@@ -35,11 +35,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .mapsheet-popup {
 	border-radius: 2px;
+	transition: display 1s ease;
 }
 
 .mapsheet-popup > img {
 	width: 100%;
 	border-radius: 2px;
+	transition: width 1s ease;
 }
 
 .links {
@@ -65,7 +67,8 @@ h1, h2, h3, h4, h5, h6 {
 	height: 500px;
 	margin: 0;
 	padding: 0;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 	/* Hides Scrollbar But Still Enables Scrolling */
