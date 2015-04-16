@@ -1,7 +1,9 @@
 $(document).ready( function() {       
   // Make sure the spreadsheet is published!
-  var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-TPM7PTxKdwMZtAsHfPYoB-ZFTBSwErlkFiJXV1Agqo/pubhtml'; 
+  // var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-TPM7PTxKdwMZtAsHfPYoB-ZFTBSwErlkFiJXV1Agqo/pubhtml'; 
 
+  var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nD3NRMxzghJqzxCe2QTPJul_semQGr97b6yWBe0xdk0/pubhtml?gid=1984347147&single=true'; 
+  
   var init = function () {
     Tabletop.init({
       key: published_spreadsheet_url,
@@ -9,7 +11,6 @@ $(document).ready( function() {
       simpleSheet: true
     });
   }();
-
 
   // Displays items in sidebar
   function displayData(data, tabletop) {
@@ -20,16 +21,16 @@ $(document).ready( function() {
   }
 
   // Template for pop-up on map
-  var popupSource   = $("#popup-template").html();
+  var popupSource   = $('#popup-template').html();
   var popupTemplate = Handlebars.compile(popupSource);
 
   // Map Instantiater
   var map = Mapsheet({
     provider: Mapsheet.Providers.Google,
     key: published_spreadsheet_url,
-    element: "map",
+    element: 'map',
     popupTemplate: popupTemplate,
-    titleColumn: 'index',
+    sheetName: 'ITP',
     callback: function (mapsheet, tabletop) {
       // var listItems = [];
       // for(var i = 0; i < mapsheet.points.length; i++) {
@@ -37,7 +38,7 @@ $(document).ready( function() {
       //   listItems.push(mapsheet.points[i].model);
       // }
       // console.log(listItems);
-      // console.log(mapsheet);
+      console.log(mapsheet);
     }
   });
 

@@ -1,12 +1,17 @@
 /* Global Styling */
 
-body {
+body, h1 {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 300;
 	color: HSLA(213, 20%, 36%, 1);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
 	font-family: 'Muli', sans-serif;
 	padding: 0;
 	color: HSLA(195, 100%, 29%, 1);
@@ -74,8 +79,14 @@ a:hover {
 	background-image: -webkit-linear-gradient(HSLA(0, 0%, 100%, 0), HSLA(0, 0%, 100%, 1));
 }
 
+#fade > img {
+	width: 45px;
+	float: right;
+	padding: 30px 15px 0 0;
+}
+
 #descriptions {
-	height: 500px;
+	height: 450px;
 	margin: 0;
 	padding: 0;
 	overflow-y: scroll;
@@ -107,9 +118,9 @@ a:hover {
 
 @media (min-width: 880px) {
 	#map {
-		width: 66%;
+		width: 49%;
 	}
 	#sidebar {
-		width: 33%;
+		width: 50%;
 	}
 }

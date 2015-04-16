@@ -16,9 +16,10 @@
       <div id="map"></div>
       <!-- Sidebar -->
       <div id="sidebar">
+       <h1>Atlanta Dog Parks Directory</h1>
         <ul id="descriptions">
         </ul>
-        <div id="fade"></div>
+        <div id="fade"><img src="assets/down-chevron.png"></div>
       </div>
     </section>
 
@@ -26,8 +27,8 @@
     <script id="sidebar-template" type="text/x-handlebars-template">
       {{#each this}}
         <li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}" data-image="{{image}}">
-          <h4>{{name}}</h4>
-          <p>{{neighborhood}} in {{location}}</p>
+          <h4>{{index}}. {{name}}</h4>
+          <p>{{address}} in {{area}}</p>
         </li>
       {{/each}}
       <li id="last"></li>
@@ -36,10 +37,10 @@
     <!-- Template for Pop-up -->
     <script id="popup-template" type="text/x-handlebars-template">
       <h3>{{name}}</h3>
-      <p>{{neighborhood}} in {{location}}</p>
+      <p>{{address}} in {{area}}</p>
       <img src="{{image}}">
       <div class="links">
-        <a href="{{video}}">Youtube</a> ||
+        <a href="{{website}}" target="_blank">Website</a> ||
         <a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank">Get Directions</a>
       </div>
     </script>
