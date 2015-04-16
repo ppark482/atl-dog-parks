@@ -3,7 +3,7 @@ $(document).ready( function() {
   // var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-TPM7PTxKdwMZtAsHfPYoB-ZFTBSwErlkFiJXV1Agqo/pubhtml'; 
 
   var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nD3NRMxzghJqzxCe2QTPJul_semQGr97b6yWBe0xdk0/pubhtml?gid=1984347147&single=true'; 
-  
+
   var init = function () {
     Tabletop.init({
       key: published_spreadsheet_url,
@@ -14,10 +14,10 @@ $(document).ready( function() {
 
   // Displays items in sidebar
   function displayData(data, tabletop) {
-    var sidebarSource = $('#sidebar-template').html();
-    var sidebarTemplate = Handlebars.compile(sidebarSource);
-    var sidebarList = sidebarTemplate(data);
-    $('#descriptions').append(sidebarList);
+    var directorySource = $('#directory-template').html();
+    var directoryTemplate = Handlebars.compile(directorySource);
+    var directoryList = directoryTemplate(data);
+    $('#descriptions').append(directoryList);
   }
 
   // Template for pop-up on map

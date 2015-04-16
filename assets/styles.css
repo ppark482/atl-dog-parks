@@ -42,11 +42,12 @@ li {
   float: left;
 }
 
-#sidebar {
+#directory {
 	width: 100%;
 	height: 100%;
 	display: block;
 	float: right;
+	position: relative;
 }
 
 /* Popup on Map Styling */
@@ -64,13 +65,10 @@ li {
 
 .links {
 	padding: 5%;
+	text-align: right;
 }
 
-/* Sidebar Styling */
-
-#sidebar {
-	position: relative;
-}
+/* Directory Styling */
 
 #fade {
 	position: absolute;
@@ -94,13 +92,14 @@ li {
 }
 
 .item {
+	overflow: auto;
 	border-bottom: 1px solid HSLA(0, 0%, 90%, 1);
 	padding: 1% 0 1% 5%;
 	transition: background-color .5s ease;
 }
 
 .item:hover {
-	background-color: HSLA(151, 83%, 34%, .5);
+	background-color: HSLA(151, 83%, 34%, .2);
 	border-radius: 2px;
 	cursor: pointer;
 }
@@ -112,6 +111,14 @@ li {
 .item > p {
 	padding: 5px 0 5px 3em;
 	margin: 0;
+	display: block;
+}
+
+.directory-img {
+	float: right;
+	width: 20%;
+	border-radius: 2px;
+	padding-right: 5px;
 }
 
 #last {
@@ -121,13 +128,4 @@ li {
 /* Side by side after 880px width browser */
 
 @media (min-width: 880px) {
-	#map {
-		width: 49%;
-	}
-	#sidebar {
-		width: 50%;
-	}
-	#descriptions {
-		height: 450px;
-	}
 }

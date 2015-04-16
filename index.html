@@ -12,21 +12,22 @@
     <script type="text/javascript" src="assets/third-party/tabletop.js"></script>
     <script type="text/javascript" src="assets/third-party/mapsheet.js"></script>
     <section id="container">
-      <!-- Google Map-->
-      <div id="map"></div>
-      <!-- Sidebar -->
-      <div id="sidebar">
-       <h1>Atlanta Dog Parks Directory</h1>
+      <!-- Directory Listing -->
+      <div id="directory">
+        <h1>Atlanta Dog Parks Directory</h1>
         <ul id="descriptions">
         </ul>
-        <!-- <div id="fade"></div> -->
       </div>
+
+      <!-- Google Map-->
+      <div id="map"></div>
     </section>
 
     <!-- Template for Sidebar Items -->
-    <script id="sidebar-template" type="text/x-handlebars-template">
+    <script id="directory-template" type="text/x-handlebars-template">
       {{#each this}}
-        <li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}" data-image="{{image}}">
+        <li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}" data-image="{{imageURL}}">
+          <img class="directory-img" src="{{imageURL}}">
           <h4>{{index}}. {{name}}</h4>
           <p>{{address}} in {{area}}</p>
         </li>
@@ -38,7 +39,7 @@
     <script id="popup-template" type="text/x-handlebars-template">
       <h3>{{name}}</h3>
       <p>{{address}} in {{area}}</p>
-      <img src="{{image}}">
+      <img src="{{imageURL}}">
       <div class="links">
         <a href="{{website}}" target="_blank">Website</a> ||
         <a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank">Get Directions</a>
