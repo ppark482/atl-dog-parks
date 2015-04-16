@@ -94,9 +94,9 @@ a:hover {
 }
 
 	/* Hides Scrollbar But Still Enables Scrolling */
-#descriptions::-webkit-scrollbar {
+/*#descriptions::-webkit-scrollbar {
 	display: none;
-}
+}*/
 
 .item {
 	border-bottom: 1px solid HSLA(0, 0%, 90%, 1);
