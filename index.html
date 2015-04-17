@@ -18,7 +18,6 @@
         <ul id="descriptions">
         </ul>
       </div>
-
       <!-- Google Map-->
       <div id="map"></div>
     </section>
@@ -26,7 +25,7 @@
     <!-- Template for Sidebar Items -->
     <script id="directory-template" type="text/x-handlebars-template">
       {{#each this}}
-        <li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}" data-image="{{imageURL}}">
+        <li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}">
           <img class="directory-img" src="{{imageURL}}">
           <h4>{{index}}. {{name}}</h4>
           <p>{{address}} in {{area}}</p>
@@ -41,12 +40,10 @@
       <p>{{address}} in {{area}}</p>
       <img src="{{imageURL}}">
       <div class="links">
-        <a href="{{website}}" target="_blank">Website</a> ::
+        <a href="{{website}}" target="_blank">Website</a> ||
         <a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank">Get Directions</a>
       </div>
     </script>
-
-    <!-- <iframe width="560" height="315" src="{{video}}" frameborder="0" allowfullscreen></iframe> -->
 
     <script type="text/javascript" src="assets/scripts/custom.js"></script>
   </body>

@@ -1,9 +1,8 @@
 $(document).ready( function() {       
   // Make sure the spreadsheet is published!
-  // var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-TPM7PTxKdwMZtAsHfPYoB-ZFTBSwErlkFiJXV1Agqo/pubhtml'; 
-
   var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nD3NRMxzghJqzxCe2QTPJul_semQGr97b6yWBe0xdk0/pubhtml?gid=1984347147&single=true'; 
 
+  // Uses Tabletop to pull data from Google Spreadsheet
   var init = function () {
     Tabletop.init({
       key: published_spreadsheet_url,
@@ -30,18 +29,11 @@ $(document).ready( function() {
     key: published_spreadsheet_url,
     element: 'map',
     popupTemplate: popupTemplate,
-    sheetName: 'ITP',
-    callback: function (mapsheet, tabletop) {
-      // var listItems = [];
-      // for(var i = 0; i < mapsheet.points.length; i++) {
-      //   mapsheet.points[i].marker.icon.labelOrigin = mapsheet.points[i].model.name;
-      //   listItems.push(mapsheet.points[i].model);
-      // }
-      // console.log(listItems);
-      console.log(mapsheet);
-    }
+    sheetName: 'ITP'
   });
 
+
+  // Clicking on a list item centers map on selected item
   $('#descriptions').on('click', 'li', function () {
     var selected = $(this).data();
     map = Mapsheet({
@@ -55,7 +47,6 @@ $(document).ready( function() {
         center: [selected.latitude, selected.longitude]
       }
     });
-    console.log(map);
   });
 
 });
