@@ -3,6 +3,7 @@
 ## How to use with Medley:
 
 Preparation:
+
 1. Clone this repository down, put desired name into 'new-name-here':
 
 		git clone git@github.com:ajcdap/map-template.git new-name-here
@@ -44,13 +45,16 @@ Editing Map Data and Output
 		{{#each this}}
 			<li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}">
 
-				// only edit the code in here
+				// only edit the code in here using html markup
 
 			</li>
 		{{/each}}
 
 	![Popup Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/popup-template-screenshot.png)
 
+	This template controls what the pop-up looks like when a marker is clicked.
+
+	
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
