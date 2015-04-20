@@ -1,4 +1,4 @@
-# Map + Directory of Dog Parks in Atlanta
+# Map + Directory of ATL Dog Parks
 
 ### Using with Medley - Preparation:
 
@@ -30,7 +30,6 @@
 
 ### Editing Map Data and Output:
 
-
 - Step 1: Replace the existing url in assets/scripts/custom.js:
 
 		var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/unique-key';
@@ -54,6 +53,27 @@
 	This template controls what the pop-up looks like when a marker is clicked. 
 
 	If you haven't guess by now, whatever is in these curly brackets: {{  }} refers to whatever you named a column in your Google Spreadsheet. Use your HTML skills in conjunction with these bracket tags to populate both templates.
+
+- Step 3: Copy contents of index.html directly in Source Editor of flatpage. Make sure to use Source Editor and not the HTML editor or WYSIWYG.
+
+- Step 4: Delete these tags:
+
+		<html>
+		<head>
+		</head>
+		<body>
+		</body>
+		</html>
+
+- Step 5: Wrap entire content with:
+
+		<div>
+
+			All of your content minus the above tags here
+
+		</div>
+
+
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
