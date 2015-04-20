@@ -3,6 +3,7 @@
 ## How to use with Medley:
 
 Preparation:
+------------
 
 1. Clone this repository down, put desired name into 'new-name-here':
 
@@ -30,7 +31,9 @@ Preparation:
   
 		https://docs.google.com/spreadsheets/d/unique-key
 
-Editing Map Data and Output
+Editing Map Data and Output:
+----------------------------
+
 
 - Step 1: Replace the existing url in assets/scripts/custom.js:
 
@@ -54,7 +57,7 @@ Editing Map Data and Output
 
 	This template controls what the pop-up looks like when a marker is clicked.
 
-	
+
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
