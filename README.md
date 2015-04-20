@@ -4,7 +4,7 @@
 
 - Preparation:
 	- Clone this repository down
-		git clone git@github.com:ajcdap/map-template.git new-name-here
+			git clone git@github.com:ajcdap/map-template.git new-name-here
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
