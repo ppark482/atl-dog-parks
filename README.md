@@ -55,10 +55,6 @@
 
 	If you haven't guess by now, whatever is in these curly brackets: {{  }} refers to whatever you named a column in your Google Spreadsheet. Use your HTML skills in conjunction with these bracket tags to populate both templates.
 
-
-
-
-
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
 - [Tabletop.js](https://github.com/jsoma/tabletop)
