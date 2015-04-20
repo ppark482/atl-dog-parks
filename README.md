@@ -27,6 +27,7 @@ Preparation:
 - Publish the spreadsheet and grab the unique link:
 
 				File > Publish to the web ... > Link: Entire Document: Publish
+
 				https://docs.google.com/spreadsheets/d/unique-key
 
 Editing Map Data and Output
