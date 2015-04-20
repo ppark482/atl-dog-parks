@@ -22,7 +22,7 @@ Preparation:
 
 - Populate spreadsheet with data including latitude and longitude coordinates;
 	
-	[Web App That Converts Address to Lat/Lng](http://www.latlong.net/convert-address-to-lat-long.html)
+		[Web App That Converts Address to Lat/Lng](http://www.latlong.net/convert-address-to-lat-long.html)
 
 - Publish the spreadsheet and grab the unique link:
 
