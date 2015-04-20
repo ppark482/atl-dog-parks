@@ -3,13 +3,13 @@
 ## How to use with Medley:
 
 Preparation:
-- Clone this repository down, put desired name into 'new-name-here':
+1. Clone this repository down, put desired name into 'new-name-here':
 
 		git clone git@github.com:ajcdap/map-template.git new-name-here
 
-- If git/github makes you uncomfortable, copy and paste the entire directory from the CMG Host server;
+2. If git/github makes you uncomfortable, copy and paste the entire directory from the CMG Host server;
 
-- Create a new Google Spreadsheet with these requirements:
+3. Create a new Google Spreadsheet with these requirements:
 
 	> ~ Make sure one column title in your spreadsheet is "lat" and another one is "lng";
 
@@ -19,11 +19,11 @@ Preparation:
 
 	> ~ You will access column data by their titles;
 
-- Populate spreadsheet with data including latitude and longitude coordinates;
+4. Populate spreadsheet with data including latitude and longitude coordinates;
 	
 	[Web App That Converts Address to Lat/Lng](http://www.latlong.net/convert-address-to-lat-long.html)
 
-- Publish the spreadsheet and grab the unique link:
+5. Publish the spreadsheet and grab the unique link:
 
 		File > Publish to the web ... > Link: Entire Document: Publish
   
@@ -35,7 +35,9 @@ Editing Map Data and Output
 
 		var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/unique-key';
 
-
+- Step 2: 
+	![Directory Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/directory-template-screenshot.png)
+	![Popup Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/popup-template-screenshot.png)
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
