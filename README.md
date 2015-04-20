@@ -1,9 +1,6 @@
 # Map + Directory of Dog Parks in Atlanta
 
-## How to use with Medley:
-
-Preparation:
-------------
+### Using with Medley - Preparation:
 
 1. Clone this repository down, put desired name into 'new-name-here':
 
@@ -31,8 +28,7 @@ Preparation:
   
 		https://docs.google.com/spreadsheets/d/unique-key
 
-Editing Map Data and Output:
-----------------------------
+### Editing Map Data and Output:
 
 
 - Step 1: Replace the existing url in assets/scripts/custom.js:
