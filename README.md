@@ -35,9 +35,22 @@ Editing Map Data and Output
 
 		var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/unique-key';
 
-- Step 2: 
+- Step 2: In index.html, find these two pieces of code. These are the templates that are used to render the list and the map popups:
+
 	![Directory Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/directory-template-screenshot.png)
+
+	This template controls what the item list looks like. You only need to edit:
+
+		{{#each this}}
+			<li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}">
+
+				// only edit the code in here
+
+			</li>
+		{{/each}}
+
 	![Popup Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/popup-template-screenshot.png)
+
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
