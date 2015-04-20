@@ -2,7 +2,7 @@ $(document).ready( function() {
 
 /*//////////////////////////////////////////////////////////////////////////////
  // 
-  Step 1: Replace the existing url in assets/scripts/custom.js:
+  Step 1: Replace this url:
     Make sure the spreadsheet is published!
  // 
  //////////////////////////////////////////////////////////////////////////////*/ 
@@ -12,7 +12,7 @@ $(document).ready( function() {
 /*//////////////////////////////////////////////////////////////////////////////
 // 
   ** Ignore
-  Uses Tabletop to pull data from Google Spreadsheet
+    Uses Tabletop to pull data from Google Spreadsheet
 // 
 //////////////////////////////////////////////////////////////////////////////*/
 
@@ -42,7 +42,7 @@ $(document).ready( function() {
     key: published_spreadsheet_url,
     element: 'map',
     popupTemplate: popupTemplate,
-    sheetName: 'ITP'
+    sheetName: 'Sheet1'
   });
 
 
