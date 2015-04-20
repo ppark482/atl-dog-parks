@@ -1,8 +1,21 @@
-$(document).ready( function() {       
-  // Make sure the spreadsheet is published!
+$(document).ready( function() {
+
+/*//////////////////////////////////////////////////////////////////////////////
+ // 
+  Step 1: Replace the existing url in assets/scripts/custom.js:
+    Make sure the spreadsheet is published!
+ // 
+ //////////////////////////////////////////////////////////////////////////////*/ 
+
   var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nD3NRMxzghJqzxCe2QTPJul_semQGr97b6yWBe0xdk0/pubhtml?gid=1984347147&single=true'; 
 
-  // Uses Tabletop to pull data from Google Spreadsheet
+/*//////////////////////////////////////////////////////////////////////////////
+// 
+  ** Ignore
+  Uses Tabletop to pull data from Google Spreadsheet
+// 
+//////////////////////////////////////////////////////////////////////////////*/
+
   var init = function () {
     Tabletop.init({
       key: published_spreadsheet_url,
