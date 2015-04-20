@@ -11,11 +11,11 @@ $(document).ready( function() {
 
 /*//////////////////////////////////////////////////////////////////////////////
 // 
-  ** Ignore
-    Uses Tabletop to pull data from Google Spreadsheet
+  ** Ignore everything below here unless you know what you're doing
 // 
 //////////////////////////////////////////////////////////////////////////////*/
 
+  // Uses Tabletop to pull data from Google Spreadsheet
   var init = function () {
     Tabletop.init({
       key: published_spreadsheet_url,

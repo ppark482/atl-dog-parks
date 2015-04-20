@@ -51,7 +51,11 @@
 
 	![Popup Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/popup-template-screenshot.png)
 
-	This template controls what the pop-up looks like when a marker is clicked.
+	This template controls what the pop-up looks like when a marker is clicked. 
+
+	If you haven't guess by now, whatever is in these curly brackets: {{  }} refers to whatever you named a column in your Google Spreadsheet. Use your HTML skills in conjunction with these bracket tags to populate both templates.
+
+
 
 
 
