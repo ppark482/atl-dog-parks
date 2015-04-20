@@ -12,8 +12,11 @@ Preparation:
 - Create a new Google Spreadsheet with these requirements:
 
 	> ~ Make sure one column title in your spreadsheet is "lat" and another one is "lng";
+
 	> ~ The column with title "hexcolor" determines the color of the marker on the map, use hexidecimal;
+
 	> ~ Otherwise, add whatever column titles you want with the data that you will be displaying but keep them all lowercase, capitalization matters;
+	
 	> ~ You will access column data by their titles;
 
 - Populate spreadsheet with data including latitude and longitude coordinates;
