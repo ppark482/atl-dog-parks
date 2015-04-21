@@ -1,19 +1,12 @@
-$(document).ready( function() {
+(function (createMap) {
 
-/*//////////////////////////////////////////////////////////////////////////////
- // 
-  Step 1: Replace this url:
-    Make sure the spreadsheet is published!
- // 
- //////////////////////////////////////////////////////////////////////////////*/ 
+	createMap(url);
 
-  var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1nD3NRMxzghJqzxCe2QTPJul_semQGr97b6yWBe0xdk0/pubhtml?gid=1984347147&single=true'; 
+}
 
-/*//////////////////////////////////////////////////////////////////////////////
-// 
-  ** Ignore everything below here unless you know what you're doing
-// 
-//////////////////////////////////////////////////////////////////////////////*/
+(function (url) {
+
+	var published_spreadsheet_url = url;
 
   // Uses Tabletop to pull data from Google Spreadsheet
   var init = function () {
@@ -45,7 +38,6 @@ $(document).ready( function() {
     sheetName: 'Sheet1'
   });
 
-
   // Clicking on a list item centers map on selected item
   $('#descriptions').on('click', 'li', function () {
     var selected = $(this).data();
@@ -62,4 +54,6 @@ $(document).ready( function() {
     });
   });
 
-});
+}) // end local scope
+
+); // end createMap
