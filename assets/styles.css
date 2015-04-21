@@ -1,6 +1,6 @@
 /* Global Styling */
 
-body, h1 {
+#container, h1 {
 	font-family: 'Roboto', 'Ariel', 'sans-serif';
 	font-weight: 300;
 	color: HSLA(213, 20%, 36%, 1);
