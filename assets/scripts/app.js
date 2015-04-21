@@ -19,38 +19,14 @@
 
   // Displays items in sidebar
   function displayData(data, tabletop) {
-  	$.ajax({
-  		url: '../mapsheet/assets/templates/directory_list.handlebars',
-  		cache: true,
-  		success: function (data) {
-  			console.log(data);
-  		}
-  	});
-
-  }
-
-    // var directorySource = $('#directory-template').html();
-    // var directoryTemplate = Handlebars.compile(directorySource);
-    // var directoryList = directoryTemplate(data);
-    // $('#descriptions').append(directoryList);
-
-    // (function getTemplateAjax(path) {
-    //     var source;
-    //     var template;
-
-    //     $.ajax({
-    //         url: path, //ex. js/templates/mytemplate.handlebars
-    //         cache: true,
-    //         success: function(data) {
-    //             source    = data;
-    //             template  = Handlebars.compile(source);
-    //             $('#target').html(template);
-    //         }               
-    //     });         
-    // })()
+  	var source = '{{#each this}}<li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}"><img class="directory-img" src="{{imageURL}}"><h3>{{index}}. {{name}}</h3><ul><li>{{address1}}</li><li>{{address2}}</li></ul></li>{{/each}}<li id="last"></li>';
+		var directoryTemplate = Handlebars.compile(source);
+		var directoryList = directoryTemplate(data);
+		$('#descriptions').append(directoryList);  	
+  }; 	
 
   // Template for pop-up on map
-  var popupSource   = $('#popup-template').html();
+  var popupSource = '<h2>{{name}}</h2><img class="popup-img" src="{{imageURL}}"><ul><a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank"><li>{{address1}}</li><li>{{address2}}</li></a></ul><ul><li>{{hours1}}</li><li>{{hours2}}</li></ul><div class="links"><a href="{{website}}" target="_blank">Website</a></div>';
   var popupTemplate = Handlebars.compile(popupSource);
 
   // Map Instantiater
