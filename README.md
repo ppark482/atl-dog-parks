@@ -28,50 +28,15 @@
 
 ### Editing Map Data and Output:
 
-- Step 1: Replace the existing url in assets/scripts/custom.js:
+- Step 1: In the `assets/spreadsheets` folder, copy and paste an existing file and rename it to whatever you want with the file extension `.js`.
 
-		var published_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/unique-key';
+		for example: atlanta_pothole_locations.js
 
-- Step 2: In index.html, find these two pieces of code. These are the templates that are used to render the list and the map popups:
+- Step 2: In your new file that you created (i.e. atlanta_pothole_locations.js) you should see:
 
-	![Directory Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/directory-template-screenshot.png)
+		var url = 'https://docs.google.com/spreadsheets/d/unique-key';
 
-	This template controls what the item list looks like. You only need to edit:
-
-		{{#each this}}
-			<li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}">
-
-				// only edit the code in here using html markup
-
-			</li>
-		{{/each}}
-
-	![Popup Template HTML](http://host.coxmediagroup.com/ajc/dev/projects/mapsheet/assets/images/popup-template-screenshot.png)
-
-	This template controls what the pop-up looks like when a marker is clicked. 
-
-	If you haven't guess by now, whatever is in these curly brackets: {{  }} refers to whatever you named a column in your Google Spreadsheet. Use your HTML skills in conjunction with these bracket tags to populate both templates.
-
-- Step 3: Copy contents of index.html directly in Source Editor of flatpage. Make sure to use Source Editor and not the HTML editor or WYSIWYG.
-
-- Step 4: Delete these tags:
-
-		<html>
-		<head>
-		</head>
-		<body>
-		</body>
-		</html>
-
-- Step 5: Wrap entire content with:
-
-		<div>
-
-			All of your content minus the above tags here
-
-		</div>
-
-
+- Step 3: Change the link that's in between the parenthesis to your unique link that you got from Google Spreadsheets.
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
