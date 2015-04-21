@@ -1,7 +1,7 @@
 /* Global Styling */
 
 body, h1 {
-	font-family: 'Oswald', sans-serif;
+	font-family: 'Roboto', 'Ariel', 'sans-serif';
 	font-weight: 300;
 	color: HSLA(213, 20%, 36%, 1);
 }
@@ -12,9 +12,10 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
 	padding: 0;
-	color: HSLA(195, 100%, 29%, 1);
+	color: HSLA(213, 20%, 36%, 1);
 }
 
 a {
@@ -23,7 +24,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 li {
@@ -33,6 +34,7 @@ li {
 /* Content Styling */
 #container {
 	width: 100%;
+	background-color: white;
 }
 
 #map {
@@ -59,7 +61,7 @@ li {
 	transition: display 1s ease;
 }
 
-.mapsheet-popup > img {
+.popup-img {
 	width: 100%;
 	border-radius: 2px;
 	transition: width 1s ease;
@@ -68,6 +70,17 @@ li {
 .links {
 	padding: 5%;
 	text-align: right;
+	border-top: 1px solid HSLA(0, 0%, 90%, 1); 
+}
+
+.directory-img {
+	float: right;
+	/*width: 20%;*/
+	/*max-width: 130px;*/
+	width: 130px;
+	border-radius: 2px;
+	padding-top: 15px;
+	padding-right: 5px;
 }
 
 /* Directory Styling */
@@ -93,6 +106,7 @@ li {
 }
 
 .item {
+	min-width: 550px;
 	overflow: auto;
 	border-bottom: 1px solid HSLA(0, 0%, 90%, 1);
 	padding: 1% 0 1% 5%;
@@ -100,7 +114,7 @@ li {
 }
 
 .item:hover {
-	background-color: HSLA(151, 83%, 34%, .2);
+	background-color: HSLA(0, 0%, 90%, .4);
 	border-radius: 2px;
 	cursor: pointer;
 }
@@ -113,13 +127,6 @@ li {
 	padding: 5px 0 5px 3em;
 	margin: 0;
 	display: block;
-}
-
-.directory-img {
-	float: right;
-	width: 20%;
-	border-radius: 2px;
-	padding-right: 5px;
 }
 
 #last {
