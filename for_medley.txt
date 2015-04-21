@@ -1,0 +1,19 @@
+<div>
+<link href='http://fonts.googleapis.com/css?family=Muli:300,400|Oswald:300,400,700' rel='stylesheet' type='text/css'><link rel="stylesheet" type="text/css" href="assets/styles.css"><script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script><script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0/handlebars.min.js"></script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script type="text/javascript" src="assets/third-party/tabletop.js"></script><script type="text/javascript" src="assets/third-party/mapsheet.js"></script><section id="container"><div id="directory"><ul id="descriptions"></ul></div><div id="map"></div></section>
+
+
+  <!-- **********************************************************
+      Change ONLY the file below to created JS file 
+      ex: <script src="assets/spreadsheets/created_file_here.js"></script>
+  *********************************************************** -->
+
+  <script src="assets/spreadsheets/atl_free_museums.js"></script>
+
+  <!-- **********************************************************
+      Change ONLY the file above to created JS file
+      ex: <script src="assets/spreadsheets/different_file_name.js"></script>
+  *********************************************************** -->
+
+
+  <script src="assets/scripts/app.js"></script>
+</div>

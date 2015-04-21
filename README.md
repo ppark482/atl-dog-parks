@@ -1,4 +1,4 @@
-# Map + Directory of ATL Dog Parks
+# Map + Directory Template
 
 ### Using with Medley - Preparation:
 
@@ -6,9 +6,7 @@
 
 		git clone git@github.com:ajcdap/map-template.git new-name-here
 
-2. If git/github makes you uncomfortable, copy and paste the entire directory from the CMG Host server;
-
-3. Create a new Google Spreadsheet with these requirements:
+2. Create a new Google Spreadsheet with these requirements:
 
 	> ~ Make sure one column title in your spreadsheet is "lat" and another one is "lng";
 
@@ -18,11 +16,11 @@
 
 	> ~ You will access column data by their titles;
 
-4. Populate spreadsheet with data including latitude and longitude coordinates;
+3. Populate spreadsheet with data including latitude and longitude coordinates;
 	
 	[Web App That Converts Address to Lat/Lng](http://www.latlong.net/convert-address-to-lat-long.html)
 
-5. Publish the spreadsheet and grab the unique link:
+4. Publish the spreadsheet and grab the unique link:
 
 		File > Publish to the web ... > Link: Entire Document: Publish
   
