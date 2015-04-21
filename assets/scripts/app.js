@@ -19,11 +19,35 @@
 
   // Displays items in sidebar
   function displayData(data, tabletop) {
-    var directorySource = $('#directory-template').html();
-    var directoryTemplate = Handlebars.compile(directorySource);
-    var directoryList = directoryTemplate(data);
-    $('#descriptions').append(directoryList);
+  	$.ajax({
+  		url: '../mapsheet/assets/templates/directory_list.handlebars',
+  		cache: true,
+  		success: function (data) {
+  			console.log(data);
+  		}
+  	});
+
   }
+
+    // var directorySource = $('#directory-template').html();
+    // var directoryTemplate = Handlebars.compile(directorySource);
+    // var directoryList = directoryTemplate(data);
+    // $('#descriptions').append(directoryList);
+
+    // (function getTemplateAjax(path) {
+    //     var source;
+    //     var template;
+
+    //     $.ajax({
+    //         url: path, //ex. js/templates/mytemplate.handlebars
+    //         cache: true,
+    //         success: function(data) {
+    //             source    = data;
+    //             template  = Handlebars.compile(source);
+    //             $('#target').html(template);
+    //         }               
+    //     });         
+    // })()
 
   // Template for pop-up on map
   var popupSource   = $('#popup-template').html();

@@ -1,0 +1,11 @@
+{{#each this}}
+  <li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}">
+    <img class="directory-img" src="{{imageURL}}">
+    <h3>{{index}}. {{name}}</h3>
+    <ul>
+      <li>{{address1}}</li>
+      <li>{{address2}}</li>
+    </ul>
+  </li>
+{{/each}}
+<li id="last"></li>
