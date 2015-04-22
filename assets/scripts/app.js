@@ -26,7 +26,7 @@
   }; 	
 
   // Template for pop-up on map
-  var popupSource = '<h2>{{name}}</h2><img class="popup-img" src="{{imageURL}}"><ul><a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank"><li>{{address1}}</li><li>{{address2}}</li></a></ul><ul><li>{{hours1}}</li><li>{{hours2}}</li></ul><div class="links"><a href="{{website}}" target="_blank">Website</a></div>';
+  var popupSource = '<h2>{{name}}</h2><img class="popup-img" src="{{imageURL}}"><ul><li><a href="https://www.google.com/maps?saddr=My+Location&daddr={{lat}},{{lng}}" target="_blank">Directions ></a></li><li><a href="{{website}}" target="_blank">Website ></a></li></ul><ul><li>Hours:</li><li>{{hours1}}</li><li>{{hours2}}</li></ul><div class="links"></div>';
   var popupTemplate = Handlebars.compile(popupSource);
 
   // Map Instantiater

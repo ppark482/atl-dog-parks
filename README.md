@@ -36,7 +36,15 @@
 
 		var url = 'https://docs.google.com/spreadsheets/d/unique-key';
 
-- Step 3: Change the link that's in between the parenthesis to your unique link that you got from Google Spreadsheets.
+- Step 3: Change the link that's to the unique link that you got from the Google Spreadsheet that you published to the web.
+
+- Step 4: After saving the new file, link to the new `.js` file in `index.html` in between the two comment blocks. Remove the old reference.
+
+- Step 5: Place the entire directory onto the CMG host server under `ajc_prod/dev/projects/name-of-your-project`.
+
+- Step 6: Open up `for_medley.txt`. The markup on this page is an edited version of `index.html` linking all sources to their proper directories on the CMG host server. Remove the old reference in between the two comment blocks and link to the new `.js` file that you've created.
+
+		http://host.coxmediagroup.com/ajc/dev/projects/
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)

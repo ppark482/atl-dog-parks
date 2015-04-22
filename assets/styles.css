@@ -64,7 +64,13 @@ li {
 
 .mapsheet-popup {
 	border-radius: 2px;
+	max-height: 395px;
 	transition: display 1s ease;
+	overflow: hidden;
+}
+
+.gm-style-iw > div {
+	overflow: hidden;
 }
 
 .popup-img {
@@ -142,5 +148,7 @@ li {
 @media (min-width: 850px) {
 	#directory {
 		height: 500px;
+	}
+	.directory-img {
 	}
 }
