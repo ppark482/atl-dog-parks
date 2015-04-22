@@ -44,7 +44,7 @@
 
 - Step 6: Open up `for_medley.txt`. The markup on this page is an edited version of `index.html` linking all sources to their proper directories on the CMG host server. Remove the old reference in between the two comment blocks and link to the new `.js` file that you've created.
 
-		http://host.coxmediagroup.com/ajc/dev/projects/
+		ex: http://host.coxmediagroup.com/ajc/dev/projects/your-project-name-here
 
 ## References
 - [Handlebars.js](http://handlebarsjs.com/)
