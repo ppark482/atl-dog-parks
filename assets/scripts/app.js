@@ -19,7 +19,7 @@
 
   // Displays items in sidebar
   function displayData(data, tabletop) {
-  	var source = '{{#each this}}<li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}"><img class="directory-img" src="{{imageURL}}"><h3>{{index}}. {{name}}</h3><ul><li>{{address1}}</li><li>{{address2}}</li></ul></li>{{/each}}<li id="last"></li>';
+  	var source = '{{#each this}}<li class="item" data-latitude="{{lat}}" data-longitude="{{lng}}"><a href="#map"><img class="directory-img" src="{{imageURL}}"><h3>{{index}}. {{name}}</h3><ul><li>{{address1}}</li><li>{{address2}}</li></ul></li></a>{{/each}}<li id="last"></li>';
 		var directoryTemplate = Handlebars.compile(source);
 		var directoryList = directoryTemplate(data);
 		$('#descriptions').append(directoryList);  	
