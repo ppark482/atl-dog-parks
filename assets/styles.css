@@ -39,7 +39,8 @@ li {
 	height: 100%;
 	/* Use font-size 85.5% during testing to account for mobile wrapper */
 	font-size: 85.5%;
-	overflow: auto;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 #map {
